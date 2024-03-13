@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design Example</title>
+  <link rel="stylesheet" media="screen and (min-width: 701px) and (max-width: 900px)" href="example2.css">
+</head>
+
+<body>
+    <!-- EXCERCISE 1 ---->                                                                                      
+    <h1>Resize the browser window to see the effect!</h1>
+    <p>The media query will only apply if the media type is screen and the viewport is 480px wide or wider.</p>
+    <img src="./assest/image1.png" style="max-width:100%;height:auto;">
+    <p>The media query will only apply if the media type is screen and the viewport is 480px wide or wider.</p>
+    <!-- EXCERCISE 2 ---->
+    <h2>Show Different Images Depending on Browser Width</h2>
+    <p>Resize the browser width and the image will change at 600px and 1500px.</p>
+    <picture>
+        <source srcset="./assest/image3.png" media="(max-width: 600px)">
+        <source srcset="./assest/image2.png"" media="(max-width: 1500px)">
+        <source srcset="./assest/image1.png"">
+        <img src="./assest/flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+    <!-- EXCERCISE 3 ---->
+    <h1 style="font-size:10vw;">Responsive Text</h1>
+    <p style="font-size: 5vw;">Resize the browser window to see how the text size scales.</p>
+    <p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width. 
+    <br>Viewport is the browser window size. 1vw is 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+</body>
+</html>
