@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Images</title>
+</head>
+<body>
+  <h2>Show Different Images Depending on Browser Width</h2>
+  <p>Resize the browser width and the image will change at 600px and 1500px.</p>
+
+  <picture>
+    <source srcset="./assest/image3.png" media="(max-width: 600px)">
+    <source srcset="./assest/image2.png" media="(max-width: 1500px)">
+    <source srcset="./assest/image1.png">
+    <img src="./assest/flowers.jpg" alt="Flowers" style="width: auto;">
+  </picture>
+</body>
+</html>
